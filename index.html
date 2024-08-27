@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Password Generator using HTML5, CSS and javascript</title>
+</head>
+<body>
+  <main class="generator">
+    <div class="result">
+      <input type="text" class="password">
+      <ion-icon class="copy" name="copy-outline"></ion-icon>
+      <p class="tooltip">Copied!</p>
+    </div>
+    <div class="amount">
+      <input type="range" class="range" min="1" max="30" value="1">
+      <p class="length">1</p>
+    </div>
+    <div class="options">
+      <label for="lowercase">
+        <input type="checkbox" id="lowercase" value="abcdefghijklmnopqrstuvwxyz">
+        <span>Lowercase (a-z)</span>
+      </label>
+      <label for="uppercase">
+        <input type="checkbox" id="uppercase" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+        <span>Uppercase (A-Z)</span>
+      </label>
+      <label for="number">
+        <input type="checkbox" id="number" value="0123456789">
+        <span>Numbers (0-9)</span>
+      </label>
+      <label for="symbol">
+        <input type="checkbox" id="symbol" value="~@#$%^&*()<>|-_[]{}+=">
+        <span>Symbols (!#@+*)</span>
+      </label>
+    </div>
+    <button class="btn">Generate</button>
+  </main>
+
+
+      <script src="script.js"></script>
+      <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
